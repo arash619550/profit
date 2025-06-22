@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+}
+
 form {
     margin: 200px auto 0;
     max-width: 400px;
@@ -55,4 +59,42 @@ input,
     color: #fff;
     border: 0;
     outline: 0;
+}
+
+
+.alert {
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.alert div {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.show {
+    opacity: 1;
+}
+
+.alert .label {
+    color: #abab64;
+}
+
+.alert .value {
+    color: #408080;
+}
+
+.backgroundcolorAlert {
+    background-color: #f5f7f4;
+    display: flex;
+    flex-direction: column;
 }

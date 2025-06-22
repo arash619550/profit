@@ -11,8 +11,9 @@
 </head>
 
 <body>
-    <form action="#">
-        <label for="calculate">نوع محاسبه</label><br>
+
+    <label for="calculate">نوع محاسبه</label><br>
+    <form action="#" id="form">
         <select id="calculate">
             <option value="">محاسبه مبلغ سود سپرده</option>
         </select><br>
@@ -34,7 +35,29 @@
     </form>
     </div>
     <div class="alert">
-        
+        <div class="backgroundcolorAlert">
+            <div>
+                <h4 class="label">اصل سپرده</h4>
+                <h4 class="value" id="deposit"></h4>
+            </div>
+            <div>
+                <h4 class="label">درصد سود سالانه</h4>
+                <h4 class="value" id="annual-profit-percentage"></h4>
+            </div>
+        </div>
+        <div>
+            <h4 class="label">سود روزانه</h4>
+            <h4 class="value" id="daily-profit"></h4>
+        </div>
+        <div>
+            <h4 class="label">سود ماهانه</h4>
+            <h4 class="value" id="monthly-profit"></h4>
+        </div>
+        <div>
+            <h4 class="label">سود سالانه</h4>
+            <h4 class="value" id="annual-profit"></h4>
+        </div>
+
     </div>
 </body>
 
