@@ -98,3 +98,7 @@ input,
     display: flex;
     flex-direction: column;
 }
+.close{
+    margin-right: auto;
+    width: 20px;
+}
