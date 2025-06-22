@@ -45,9 +45,10 @@ input,
 
 .div2 {
     display: grid;
-    margin-bottom: 24px;
+    margin-top: 24px;
 }
-.button{
+
+.button {
     padding: 8px 72px;
     border-radius: 16px;
     background-color: #719898;
