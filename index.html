@@ -11,28 +11,28 @@
 </head>
 
 <body>
-
-    <label for="calculate">نوع محاسبه</label><br>
-    <form action="#" id="form">
-        <select id="calculate">
-            <option value="">محاسبه مبلغ سود سپرده</option>
-        </select><br>
-        <label for="amount">مبلغ سپرده ( تومان )</label><br>
-        <input id="amount" type="number" placeholder="مثال:20,000,000" min="0" required><br>
-        <div class="div1">
-            <div class="div2">
-                <label for="percentage">درصد سود سالانه</label>
-                <input type="number" id="percentage" placeholder="مثال: 18" min="0" required>
+    <div id="close">
+        <label for="calculate">نوع محاسبه</label><br>
+        <form action="#" id="form">
+            <select id="calculate">
+                <option value="">محاسبه مبلغ سود سپرده</option>
+            </select><br>
+            <label for="amount">مبلغ سپرده ( تومان )</label><br>
+            <input id="amount" type="number" placeholder="مثال:20,000,000" min="0" required><br>
+            <div class="div1">
+                <div class="div2">
+                    <label for="percentage">درصد سود سالانه</label>
+                    <input type="number" id="percentage" placeholder="مثال: 18" min="0" required>
+                </div>
+                <div class="div2">
+                    <label for="number-of-days">تعداد روز</label>
+                    <input type="number" id="number-of-days" placeholder="مثال: 30" min="0" required>
+                </div>
             </div>
-            <div class="div2">
-                <label for="number-of-days">تعداد روز</label>
-                <input type="number" id="number-of-days" placeholder="مثال: 30" min="0" required>
+            <div class="div-button">
+                <button class="button">محاسبه</button>
             </div>
-        </div>
-        <div class="div-button">
-            <button class="button">محاسبه</button>
-        </div>
-    </form>
+        </form>
     </div>
     <div class="alert">
         <div class="backgroundcolorAlert">
@@ -58,6 +58,7 @@
             <h4 class="value" id="annual-profit"></h4>
         </div>
         <img src="assets/images/close.jpg" alt="close" width="20px" class="close" onclick="location.reload()">
+    </div>
     </div>
 </body>
 

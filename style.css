@@ -98,7 +98,8 @@ input,
     display: flex;
     flex-direction: column;
 }
-.close{
+
+.close {
     margin-right: auto;
     width: 20px;
 }

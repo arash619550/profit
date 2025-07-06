@@ -11,7 +11,10 @@ btn.addEventListener("click", function (e) {
     dailyProfit = Math.round((amount.value * percentage.value) / 36500);
     monthlyProfit = Math.round(dailyProfit * numberOfDays.value);
     alertFunction();
-})
+});
+const formatNumber = (num) => {
+    return Number(num).toLocaleString("fa-IR");
+};
 const alertFunction = () => {
     const alert = document.querySelector(".alert");
     const deposit = document.getElementById("deposit");
@@ -20,11 +23,20 @@ const alertFunction = () => {
     const monthlyProfitAlert = document.getElementById("monthly-profit");
     const annualProfitAlert = document.getElementById("annual-profit");
     const form = document.querySelector("form");
-    deposit.innerText = amount.value;
-    annualProfitPercentage.innerText = percentage.value;
-    dailyProfitAlert.innerText = dailyProfit;
-    monthlyProfitAlert.innerText = monthlyProfit;
-    annualProfitAlert.innerText = annualProfit;
+    deposit.innerText = formatNumber(amount.value);
+    annualProfitPercentage.innerText = formatNumber(percentage.value);
+    dailyProfitAlert.innerText = formatNumber(dailyProfit);
+    monthlyProfitAlert.innerText = formatNumber(monthlyProfit);
+    annualProfitAlert.innerText = formatNumber(annualProfit);
     alert.classList.add("show");
-    form.style.opacity="0.2";
+    form.style.opacity = "0.2";
+    closeFunction();
+};
+const closeFunction = () => {
+    const close = document.getElementById("close");
+    document.body.addEventListener("click", function () {
+        close.addEventListener("click", function () {
+            location.reload()
+        })
+    })
 }
