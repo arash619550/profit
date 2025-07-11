@@ -33,10 +33,8 @@ const alertFunction = () => {
     closeFunction();
 };
 const closeFunction = () => {
-    const close = document.getElementById("close");
-    document.body.addEventListener("click", function () {
-        close.addEventListener("click", function () {
-            location.reload()
-        })
+    const allElements = document.querySelector("body :not(.close-container)");
+    allElements.addEventListener("click", function () {
+        location.reload()
     })
 }

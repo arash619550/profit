@@ -11,12 +11,21 @@
 </head>
 
 <body>
-    <div id="close">
-        <label for="calculate">نوع محاسبه</label><br>
+    <div class="right">
+        <a href="https://www.bahesab.ir/" class="logo">باحساب</a>
+        <div class="right2">
+            <h2>وام و سپرده</h2>
+            <a href="https://www.bahesab.ir/calc/vam/" class="top">وام</a>
+            <a href="#" class="top">سپرده</a>
+        </div>
+    </div>
+    <div class="close-container">
         <form action="#" id="form">
+            <label for="calculate">نوع محاسبه</label><br>
             <select id="calculate">
-                <option value="">محاسبه مبلغ سود سپرده</option>
-            </select><br>
+                <option value="#">محاسبه مبلغ سود سپرده</option>
+                <option value="#">محاسبه درصد سود</option>
+            </select><br><br>
             <label for="amount">مبلغ سپرده ( تومان )</label><br>
             <input id="amount" type="number" placeholder="مثال:20,000,000" min="0" required><br>
             <div class="div1">
@@ -33,32 +42,31 @@
                 <button class="button">محاسبه</button>
             </div>
         </form>
-    </div>
-    <div class="alert">
-        <div class="backgroundcolorAlert">
-            <div>
-                <h4 class="label">اصل سپرده</h4>
-                <h4 class="value" id="deposit"></h4>
+        <div class="alert">
+            <div class="backgroundcolorAlert">
+                <div>
+                    <h4 class="label">اصل سپرده</h4>
+                    <h4 class="value" id="deposit"></h4>
+                </div>
+                <div>
+                    <h4 class="label">درصد سود سالانه</h4>
+                    <h4 class="value" id="annual-profit-percentage"></h4>
+                </div>
             </div>
             <div>
-                <h4 class="label">درصد سود سالانه</h4>
-                <h4 class="value" id="annual-profit-percentage"></h4>
+                <h4 class="label">سود روزانه</h4>
+                <h4 class="value" id="daily-profit"></h4>
             </div>
+            <div>
+                <h4 class="label">سود ماهانه</h4>
+                <h4 class="value" id="monthly-profit"></h4>
+            </div>
+            <div>
+                <h4 class="label">سود سالانه</h4>
+                <h4 class="value" id="annual-profit"></h4>
+            </div>
+            <img src="assets/images/close.jpg" alt="close" width="20px" class="close" onclick="location.reload()">
         </div>
-        <div>
-            <h4 class="label">سود روزانه</h4>
-            <h4 class="value" id="daily-profit"></h4>
-        </div>
-        <div>
-            <h4 class="label">سود ماهانه</h4>
-            <h4 class="value" id="monthly-profit"></h4>
-        </div>
-        <div>
-            <h4 class="label">سود سالانه</h4>
-            <h4 class="value" id="annual-profit"></h4>
-        </div>
-        <img src="assets/images/close.jpg" alt="close" width="20px" class="close" onclick="location.reload()">
-    </div>
     </div>
 </body>
 
