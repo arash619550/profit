@@ -223,3 +223,22 @@ label {
     right: 10px;
     top: 20px;
 }
+
+.navar {
+    width: 100%;
+    background-color: #2e4849;
+    margin-top: 100px;
+    height: 190px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navar a {
+    color: white;
+    font-size: 20px;
+    margin-left: 160px;
+    margin-right: 160px;
+}

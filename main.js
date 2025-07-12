@@ -37,4 +37,4 @@ const closeFunction = () => {
     allElements.addEventListener("click", function () {
         location.reload()
     })
-}
+};
